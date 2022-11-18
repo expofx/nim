@@ -20,6 +20,8 @@ Todo:
 - [x] Bot that wins every time by reducing XOR to 0 at each move
 - [x] Q learning
 
+![image](https://user-images.githubusercontent.com/56745453/202652832-c9bb443b-ad80-470b-be7f-ae9acb501d57.png)
+
 ---
 
 Thanks to Professor Paul Zeitz for introducing this problem to me!
