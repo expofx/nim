@@ -15,6 +15,10 @@ Wythoff's Nim:
 
 ![image](https://user-images.githubusercontent.com/56745453/201555204-c8ddd680-1338-4e74-8a92-07c2e2e41d05.png)
 
+Q learning:
+
+![image](https://user-images.githubusercontent.com/56745453/202778919-3472ae9f-e377-4f4b-baf7-9933d7488471.png)
+
 Todo:
 - [x] Derive proof for Beatty's theorem (on paper, explains why golden ratio can be used to find winning solution to Wythoff's Nim)
 - [x] Bot that wins every time by reducing XOR to 0 at each move

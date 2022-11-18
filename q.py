@@ -75,13 +75,16 @@ class Q:
             self.q[(tuple(heaps), action)] = 0
         self.q[(tuple(heaps), action)] += self.alpha * (reward + self.gamma * self.get_best_future_reward(next_heaps) - self.q[(tuple(heaps), action)])
         
-    def train(self, num_games=1000):
+    def train(self, num_games=1000, num_heaps=None):
         """
         Training through self play.
         """
         for _ in range(num_games):
-            nim = Nim([3,4,5])
-            # nim = Nim([random.randint(1, 10) for _ in range(random.randint(2, 4))]) # play with up to 4 heaps of random size
+            # nim = Nim([3,4,5])
+            if num_heaps:
+                nim = Nim([random.randint(1, 10) for _ in range(num_heaps)])
+            else:
+                nim = Nim([random.randint(1, 10) for _ in range(random.randint(2, 4))]) # play with up to 4 heaps of random size
             
             # keep track of states and actions taken by each player
             states = [[], []]

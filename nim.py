@@ -8,7 +8,7 @@ class Nim:
         self.heaps = heaps
         self.winner = None
         self.curr_player = 0 # players are 0 and 1
-        
+    
     def move(self, action): # action is a tuple (heap, num)
         heap, num = action
         self.heaps[heap] -= num
