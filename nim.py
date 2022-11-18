@@ -13,9 +13,6 @@ class Nim:
         heap, num = action
         self.heaps[heap] -= num
         
-        if self.heaps[heap] < 0:
-            raise Exception("Invalid move")
-        
         if self.heaps == [0]*len(self.heaps):
             self.winner = self.curr_player
         else:
