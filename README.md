@@ -14,9 +14,9 @@ Wythoff's Nim:
 ![image](https://user-images.githubusercontent.com/56745453/201555204-c8ddd680-1338-4e74-8a92-07c2e2e41d05.png)
 
 Todo:
-- [ ] Derive proof for Beatty's theorem
-- [ ] Bot that wins every time by reducing XOR to 0 at each move
+- [x] Derive proof for Beatty's theorem (on paper, explains why golden ratio can be used to find winning solution to Wythoff's Nim)
+- [x] Bot that wins every time by reducing XOR to 0 at each move
 
 ---
 
-Credits to Professor Paul Zeitz for introducing this problem to me.
+Thanks to Professor Paul Zeitz for introducing this problem to me!
