@@ -4,6 +4,7 @@ Code for:
 - Mex function (and XOR and mex equivalence fxn)
 - Calculating Sprague-Grundy values for Nim and Wythoff's Nim
 - Encoding XOR and Fibonnaci sequence/Golden ratio using Nim winning positions
+- `nimrod.py` optimal strategy agent vs human player
 
 2-heap Nim:
 
@@ -16,6 +17,7 @@ Wythoff's Nim:
 Todo:
 - [x] Derive proof for Beatty's theorem (on paper, explains why golden ratio can be used to find winning solution to Wythoff's Nim)
 - [x] Bot that wins every time by reducing XOR to 0 at each move
+- [ ] Q learning
 
 ---
 
