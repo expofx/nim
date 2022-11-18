@@ -1,11 +1,16 @@
 # nim
 
+1. `play.py`: play game of Nim with bot, Q-learning agent, or human
+2. `nim.py`: Nim and Bot classes for game and optimal playing agent based on Sprague-Grundy
+3. `q.py`: Q-learning RL agent trained on self-play
+4. `nim.ipynb`: an attempt to understand the math, derive proofs, and create intuitive visualizations :)
+5. `q.ipynb`: showing that Q-learning finds the most optimal gameplay for 2-heap Nim!
+
 Code for:
 - Mex function (and XOR and mex equivalence fxn)
 - Calculating Sprague-Grundy values for Nim and Wythoff's Nim
 - Encoding XOR and Fibonnaci sequence/Golden ratio using Nim winning positions
 - Bot (optimal strategy) and Q learning
-- `play.py` for playing with bot, Q-learning agent, or human
 
 2-heap Nim:
 
