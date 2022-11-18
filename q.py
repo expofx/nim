@@ -50,6 +50,15 @@ class Q:
                 
         return random.choice(best_actions)
     
+    def get_best_future_reward(self, heaps):
+        """
+        Get highest Q from future actions available from a given state.
+        """
+        actions = self.get_actions(heaps)
+        if not actions:
+            return 0
+        return max([self.get_value(heaps, action) for action in actions])
+    
     def get_value(self, heaps, action):
         """
         Get Q value for a given state-action pair.
@@ -64,7 +73,7 @@ class Q:
         """
         if (tuple(heaps), action) not in self.q:
             self.q[(tuple(heaps), action)] = 0
-        self.q[(tuple(heaps), action)] += self.alpha * (reward + self.gamma * self.get_value(next_heaps, self.get_best_action(next_heaps)) - self.q[(tuple(heaps), action)])
+        self.q[(tuple(heaps), action)] += self.alpha * (reward + self.gamma * self.get_best_future_reward(next_heaps) - self.q[(tuple(heaps), action)])
         
     def train(self, num_games=1000):
         """
@@ -88,7 +97,7 @@ class Q:
             for player in [0, 1]:
                 reward = 1 if nim.winner == player else -1
                 for i in range(len(states[player])):
-                    self.update(states[player][i], actions[player][i], reward, states[player][i])
+                    self.update(states[player][i], actions[player][i], reward, states[player][i+1] if i < len(states[player]) - 1 else [])
                 
             if _ % (num_games // 10) == 0:
                 print("Game", _)

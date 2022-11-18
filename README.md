@@ -18,7 +18,7 @@ Wythoff's Nim:
 Todo:
 - [x] Derive proof for Beatty's theorem (on paper, explains why golden ratio can be used to find winning solution to Wythoff's Nim)
 - [x] Bot that wins every time by reducing XOR to 0 at each move
-- [x] Q learning
+- [x] Q learning (a RL which builds table of states+actions and does a simple update based on which actions most frequently led to rewards)
 
 ![image](https://user-images.githubusercontent.com/56745453/202652832-c9bb443b-ad80-470b-be7f-ae9acb501d57.png)
 

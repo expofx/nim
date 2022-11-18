@@ -40,6 +40,6 @@ def play(player0="bot", player1="human", heaps=[3,4,5]):
 if __name__ == "__main__":
     q = Q()
     q.train(100000)
-    # print(q.q)
+    print(q.q)
     play("q", "human", [3,4,5])
     
