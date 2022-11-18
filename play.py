@@ -42,3 +42,4 @@ if __name__ == "__main__":
     q.train(100000)
     # print(q.q)
     play("q", "human", [3,4,5])
+    
